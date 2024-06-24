@@ -1,8 +1,5 @@
 package main
 
-import "fmt"
-
-//hash table solution 27.07.23
 func findJudge(n int, trust [][]int) int {
 	if n == 1 {
 		return 1
@@ -26,12 +23,3 @@ func findJudge(n int, trust [][]int) int {
 	}
 	return -1
 }
-
-func main() {
-	n := 3
-	trust := [][]int{{1, 3}, {2, 3}, {3, 1}}
-	ans := findJudge(n, trust)
-	fmt.Println(ans)
-}
-
-//1h:08m

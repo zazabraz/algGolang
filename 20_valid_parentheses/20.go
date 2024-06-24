@@ -29,5 +29,3 @@ func isValid(s string) bool {
 func main() {
 	fmt.Println(isValid("(])"))
 }
-
-//33m
