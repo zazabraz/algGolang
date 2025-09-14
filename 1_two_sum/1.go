@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func twoSum(nums []int, target int) []int {
+func twoSum1(nums []int, target int) []int {
 	hash := make(map[int]int)
 	for i, val := range nums {
 		fmt.Println(target - val)
 		if k, ok := hash[nums[i]]; ok {
-			return []int{k,i}
+			return []int{k, i}
 		}
 		hash[target-val] = i
 	}
